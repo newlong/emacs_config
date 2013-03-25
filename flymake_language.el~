@@ -1,8 +1,0 @@
-(require 'flymake)
-
-(defun flymake-php-init()
-  (let* ((temp (flymake-init-create-temp-buffer-copy 'flymake-create-temp-inplace))
-		 (local (file-relative-name temp (file-name-directory buffer-file-name)))
-		 (list "php" (list "-f" local "-l"))))
-
-)
